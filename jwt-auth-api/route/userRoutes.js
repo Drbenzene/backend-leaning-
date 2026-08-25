@@ -119,7 +119,7 @@ module.exports = router
 
 
 // ALGORITHM
-// Instructions: Given an array of strings, group the strings 
+// Given an array of strings, group the strings 
 // that are anagrams of each other into sub-arrays. 
 // Return the result as an array of arrays. Order of groups/elements does not matter.
 
