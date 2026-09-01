@@ -14,9 +14,12 @@
   "dependencies": {
     "@prisma/adapter-mariadb": "^7.9.1",
     "@prisma/client": "^7.9.1",
+    "connect-redis": "^10.0.0",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
-    "mysql2": "^3.23.3"
+    "express-session": "^1.19.0",
+    "mysql2": "^3.23.3",
+    "redis": "^6.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14",

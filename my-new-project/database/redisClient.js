@@ -1,20 +1,16 @@
-const { createClient } = require('redis');
+const {createClient} = require('redis')
 
 const redisClient = createClient({
     url: 'redis://default:tpd0mWV0DJ4KbijHz55J5tbW9iQi8EsH@redis-10278.c239.us-east-1-2.ec2.cloud.redislabs.com:10278'
 });
-
-// ✅ Error listener
 redisClient.on('error', (err) => {
-    console.error('I NO DEY CONNECT GUY', err);
+    console.error('I NO DEY CONNETC GUY')
 });
 
-// ✅ Added .on here, and changed event to 'ready' for confirmation
 redisClient.on('ready', () => {
-    console.log("REDIS CONNECTED SUCCESSFULLY");
+    console.log("REDIS CONNECTED SUCCESSFULLY")
 });
 
-// ✅ Semi-colons before an IIFE prevent potential bundling bugs
 (async () => {
     try {
         await redisClient.connect();
@@ -23,4 +19,5 @@ redisClient.on('ready', () => {
     }
 })();
 
-module.exports = redisClient;
+module.exports = redisClient
+//
